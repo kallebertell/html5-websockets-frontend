@@ -30,7 +30,7 @@
     if (!get('time')) {
       set('time', ran(30, 100));
       set('deg', ran(-179, 180));
-      set('vel', ran(1, 5));
+      set('vel', ran(1, 15));
       set('curve', ran(0, 1));
       set('fade', ran(0, 1));
       set('grow', ran(-2, 2));

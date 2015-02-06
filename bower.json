@@ -1,5 +1,7 @@
 {
   "name": "html5-websockets-frontend",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "~3.1.0"
+  }
 }
