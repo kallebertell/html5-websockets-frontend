@@ -16,7 +16,7 @@ var scoreboard = (function(state) {
       var html = '<ul class=scoreboard>';
 
       playerArr.forEach(function(playerState) {
-        html += '<li>' + playerState.name + ' ' + playerState.ducksHit + '/' + playerState.shotsFired + '</li>';
+        html += '<li><div>' + playerState.name + '</div><div>' + playerState.ducksHit + '/' + playerState.shotsFired + '</div></li>';
       });
 
 
