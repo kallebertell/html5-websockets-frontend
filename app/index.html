@@ -14,6 +14,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/scoreboard.css">
     <!-- endbuild -->
 
   </head>
@@ -29,14 +30,18 @@
       <input id="message" type="text" placeholder="Type something"/>
     </div>
 
+    <div id="scoreboard-container"></div>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/lodash/lodash.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/state.js"></script>
         <script src="scripts/duckService.js"></script>
+        <script src="scripts/scoreboard.js"></script>
         <!-- endbuild -->
 </body>
 </html>

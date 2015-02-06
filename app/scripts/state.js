@@ -2,6 +2,7 @@ var state = (function() {
   'use strict';
 
   var name = "Shooter " + Math.floor(Math.random() * 1000);
+  var updateListeners = [];
 
   var state = {
     myName: name,
@@ -12,9 +13,13 @@ var state = (function() {
     updateState: function(playerState) {
       state.players[playerState.name] = playerState;
 
-      if (state.onUpdate) {
-        state.onUpdate();
-      }
+      updateListeners.forEach(function(listenerFn) {
+        listenerFn(state);
+      });
+    },
+
+    addUpdateListener: function(listenerFn) {
+      updateListeners.push(listenerFn);
     }
   };
 
