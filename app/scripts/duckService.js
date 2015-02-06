@@ -29,7 +29,6 @@ var duckService = (function(state) {
 
     socket.onclose = function() {
         console.log('Server connection closed.');
-        appendMessage(': (', 'Connection not available');
         socket = undefined;
     }
 
@@ -37,7 +36,6 @@ var duckService = (function(state) {
         console.log('Server connection failure.');
         socket = undefined;
     }
-
 
     /**
 
