@@ -30,5 +30,9 @@ var state = (function() {
     shotsFired: 0
   };
 
+  state.getMyState = function() {
+    return state.players[name];
+  };
+
   return state;
 })();
