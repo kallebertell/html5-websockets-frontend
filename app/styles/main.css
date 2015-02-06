@@ -6,7 +6,7 @@ body {
 
 .hero-unit {
   margin: 50px auto 0 auto;
-  width: 300px;
+  width: 80%;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -16,14 +16,41 @@ body {
 }
 
 .hero-unit h1 {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 1;
   letter-spacing: -1px;
+  width: 80%;
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+input#message {
+  padding: 1%;
+  width: 98%;
+  height: 30px;
+  border: 1px solid #0095dd;
+  font-size: 18px;
+}
+#chat {
+  width: 96%;
+  background: #ffffff;
+  padding: 2%;
+  list-style: none;
+}
+
+#chat > li {
+  color: #0095dd;
+  margin-bottom: 4px;
+}
+
+#chat > li > span {
+  background: #0095dd;
+  color: #ffffff;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#chat > li.own {
+  color: gray;
 }
